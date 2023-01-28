@@ -1,0 +1,51 @@
+.animation{
+    position: relative;
+}
+.nature{
+    width: 100%;
+}
+.deer{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+.deer2{
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 800px;
+    animation-name: deeranimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.bird{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    animation-name: birdanimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.bird2{
+    position: absolute;
+    transform: rotate(310deg);
+    top: 10%;
+    right: 0%;
+    width: 400px;
+    height: 300px;
+    animation-name: bird2animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes deeranimation{
+    from{right:0px}
+    to{right: 2000px}
+}
+@keyframes birdanimation{
+    from{left:0%}
+    to{left: 90%}
+}
+@keyframes bird2animation{
+    from{right: 0%}
+    to{right: 90%;}
+}
